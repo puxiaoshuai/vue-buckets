@@ -1,0 +1,2 @@
+reactive和ref都是用来定义响应式数据的，而reactive更推荐用来定义对象，ref更推荐定义基础数据类型，但是ref也可以定义数组和对象
+在访问数据的时候，ref需要使用.value，而reactive不需要
