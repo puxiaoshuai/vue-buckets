@@ -1,20 +1,24 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
+  {
+    path: '/', redirect: {name:'vuex'}
+  },
   {
     path: '/todo',
     name: 'todo',
     component: () => import('../packages/todolist/Index.vue'),
   },
+  
   {
-    path: '/test',
-    name: 'test',
-    component: () => import('../packages/test/Index.vue'),
+    path: '/vuex',
+    name: 'vuex',
+    component: () => import('../packages/vuexdemo/Index.vue'),
   },
 
 ]
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 })
 

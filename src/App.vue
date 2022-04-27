@@ -5,7 +5,7 @@
     <div class="left">
       <ul>
         <router-link to="/todo">代办事项</router-link>
-        <router-link to="/test">测试</router-link>
+        <router-link to="/vuex">测试</router-link>
       </ul>
     </div>
     <div class="right">
